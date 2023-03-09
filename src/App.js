@@ -1,17 +1,19 @@
-import react from 'react'
-import Countries from './components/Countries';
-import Header from './components/Header';
-import Filter from './components/Filter';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Countries from "./components/Countries";
+import SingleCountry from "./components/SingleCountry";
+import Header from "./components/Header";
 
-const url = 'https://restcountries.com'
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Filter />
-      <Countries />
-    </div>
+    
+    <BrowserRouter>
+     <Header />
+      <Routes>
+        <Route path="/" element={<Countries />}></Route>
+        <Route path="/:name" element={<SingleCountry />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
