@@ -7,9 +7,13 @@ const Header = () => {
     const header = document.querySelector(".header")
     const details = document.querySelectorAll('.details')
     const lis = document.querySelectorAll("li")
+    const bgchange = document.querySelectorAll('.bgchange')
     
     details.forEach((detail) => {
       detail.classList.toggle("light-theme")
+    })  
+    bgchange.forEach((bgchange) => {
+      bgchange.classList.toggle("light-theme")
     })
     header.classList.toggle("light-theme")
     lis.forEach((li) => {

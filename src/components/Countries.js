@@ -88,13 +88,13 @@ export default function Countries() {
       ) : (
         <section className="container mx-auto p-8">
           {/* form */}
-          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between mb-8 form">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between mb-8">
             <form
               onSubmit={handleSearchCountry}
               autoComplete="off"
               className="max-w-2xl md:flex-1"
-            >
-                <button className="icon">
+             >
+                <button className="icon bgchange">
                   <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
                 </button>
               <input
@@ -105,7 +105,7 @@ export default function Countries() {
                 required
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
-                className="py-3 px-4 ml-5 md:ml-20 w-full shadow rounded outline-none  transition-all duration-200"
+                className="py-3 px-4 ml-5 md:ml-20 w-full shadow rounded outline-none  transition-all duration-200 bgchange"
               />
             </form>
 
@@ -113,10 +113,10 @@ export default function Countries() {
               <select
                 name="filter-by-region"
                 id="filter-by-region"
-                className="w-52 py-3 px-4 md:ml-0 ml-5 md:mt-10 outline-none shadow rounded"
+                className="w-52 py-3 px-4 md:ml-0 ml-5 md:mt-10 outline-none shadow rounded bgchange"
                 value={regions.name}
                 onChange={(e) => filterByRegion(e.target.value)}
-              >
+               >
                 {regions.map((region, index) => (
                   <option key={index} value={region.name}>
                     {region.name}

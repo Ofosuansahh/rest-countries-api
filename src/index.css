@@ -161,10 +161,25 @@ header.light-theme {
   transition: background-color 0.4s;
 }
 
+.bgchange {
+  background-color: var(--article-color);
+  color: var(--text-color);
+  transition: background-color 0.4s;
+}
+
+
+.bgchange.light-theme {
+  background-color: var(--light-mode-background);
+  color: var(--light-mode-text);
+}
+
+
 .countries .details.light-theme {
   background-color: var(--light-mode-background);
   color: var(--light-mode-text);
 }
+
+
 
 
 .article{
