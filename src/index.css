@@ -210,7 +210,11 @@ header.light-theme {
 
 @media (max-width: 500px) {
   .header h1 {
-    font-size: 20px;
+    font-size: 16px;
     padding: 20px 0;
+  }
+
+  .btn-moon{
+    font-size: 15px;
   }
 }
