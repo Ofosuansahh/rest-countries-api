@@ -8,22 +8,22 @@ export default function Countries() {
   const [searchText, setSearchText] = useState("");
   const regions = [
     {
-      name: "Europe",
+      name: "Africa",
+    },
+    {
+      name: "Antarctic",
+    },
+    {
+      name: "America",
     },
     {
       name: "Asia",
     },
     {
-      name: "Africa",
+      name: "Europe",
     },
     {
       name: "Oceania",
-    },
-    {
-      name: "Americas",
-    },
-    {
-      name: "Antarctic",
     },
   ];
 
