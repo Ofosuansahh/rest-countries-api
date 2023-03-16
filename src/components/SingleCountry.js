@@ -43,11 +43,11 @@ export default function SingleCountry() {
             </article>
 
             <article>
-              <h1 className="mb-8 font-bold dark:text-white text-4xl lg:text-6xl">
+              <h1 className="mb-8 font-bold dark:text-white text-2xl lg:text-3xl">
                 {item.name.official}
               </h1>
 
-            <div className="grid grid-cols-2 gap-10">
+            <div className="grid grid-cols-2 gap-20">
                 <ul className="my-4 flex flex-col items-start justify-start gap-2  dark:text-gray-400">
                   <li>Native Name: {item.name.nativeName.common}</li>
                   <li>Population: {item.population.toLocaleString()}</li>

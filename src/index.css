@@ -158,7 +158,6 @@ select {
 .arr::after{
   content: "˅";
   font-size: 1rem;
-  /* top: 6px; */
   margin-top: 5px;
   right: 50px;
   position: absolute;
@@ -245,4 +244,27 @@ select {
   .btn-moon{
     font-size: 15px;
   }
+
+    .arr::after {
+      content: "˅";
+      font-size: 1rem;
+      margin-top: 5px;
+      right: 180px;
+      position: absolute;
+    }
+
+    #search {
+      position: absolute;
+      right: 20.5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px){
+    .arr::after {
+        content: "˅";
+        font-size: 1rem;
+        margin-top: 5px;
+        right: 80px;
+        position: absolute;
+      }
 }
