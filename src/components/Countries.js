@@ -105,15 +105,15 @@ export default function Countries() {
                 required
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
-                className="py-3 px-4 ml-5 md:ml-20 w-full shadow rounded outline-none  transition-all duration-200 bgchange"
+                className="py-3 px-4 ml-5 md:ml-0 w-2/3 shadow  outline-none  transition-all duration-200 bgchange"
               />
             </form>
 
-            <form onSubmit={handleFilterByRegion}>
+            <form onSubmit={handleFilterByRegion} className="arr">
               <select
                 name="filter-by-region"
                 id="filter-by-region"
-                className="w-52 py-3 px-4 md:ml-0 ml-5 md:mt-10 outline-none shadow rounded bgchange"
+                className="w-52 py-3 px-4 md:ml-0 ml-5 md:mt-10 outline-none shadow rounded bgchange select-wrapper"
                 value={regions.name}
                 onChange={(e) => filterByRegion(e.target.value)}
                >

@@ -136,11 +136,39 @@ header.light-theme {
 .pop li span{
   font-weight: 200;
 }
+
+#search{
+  border-radius: 0 5px 5px 0;
+}
+
+#filter-by-region{
+  position: relative;
+  margin-top: -5px;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select-wrapper{
+  position: relative;
+}
+
+.arr::after{
+  content: "˅";
+  font-size: 1rem;
+  /* top: 6px; */
+  margin-top: 5px;
+  right: 50px;
+  position: absolute;
+}
+
 .icon{
   position: relative;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  top: 48px;
+  top: 0;
   margin-left: 20px;
   background-color: var(--article-color);
   width: 70px;
