@@ -11,7 +11,8 @@ export const InputArea = styled.section<{theme: string}>`
     input {
         height: 50px;
         width: 450px;
-        border-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
         padding: 0px 10px;
         border: none;
         box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
@@ -28,7 +29,8 @@ export const InputArea = styled.section<{theme: string}>`
 
     button{
         height: 50px;
-        border-radius: 2px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
         border: none;
         box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
         outline: 0;
