@@ -28,7 +28,7 @@ export const Input = ({value, search}: InputTS) => {
             </button>
             <input
                 type="text"
-                placeholder="Search By Country"
+                placeholder="Search By Country..."
                 value={input}
                 onChange={e => handleChange(e.target.value)}
             />

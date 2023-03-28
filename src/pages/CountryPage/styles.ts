@@ -7,7 +7,8 @@ export const CountryPage = styled.main`
     .container {
         width: 1024px;
         margin: auto;
-        padding: 40px 0px;
+        padding: 40px 0;
+        margin-left: 145px;
 
         .loading {
             min-height: 100vh;
@@ -43,6 +44,11 @@ export const CountryPage = styled.main`
         .container {
             width: auto;
             padding: 20px 0px;
+            margin-left: -40px;
+        }
+
+        .back--button{
+            margin-left: 45px;
         }
     }
 
