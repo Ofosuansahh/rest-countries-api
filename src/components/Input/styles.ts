@@ -37,6 +37,7 @@ export const InputArea = styled.section<{theme: string}>`
         background-color: ${props => props.theme === 'light' ? '' : 'rgb(45, 58, 70)'};
         color: ${props => props.theme === 'light' ? '' : '#FFF'};
         font-size: 14px;
+        padding-left: 20px;
     }
 
     select {
