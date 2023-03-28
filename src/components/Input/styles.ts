@@ -34,7 +34,7 @@ export const InputArea = styled.section<{theme: string}>`
         border: none;
         box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
         outline: 0;
-        background-color: ${props => props.theme === 'light' ? '' : 'rgb(44, 58, 70)'};
+        background-color: ${props => props.theme === 'light' ? '' : 'rgb(45, 58, 70)'};
         color: ${props => props.theme === 'light' ? '' : '#FFF'};
         font-size: 14px;
     }
