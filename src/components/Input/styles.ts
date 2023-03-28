@@ -61,6 +61,8 @@ export const InputArea = styled.section<{theme: string}>`
     .sel span{
         color: ${props => props.theme === 'light' ? '#000' : '#FFF'};
         margin-left: -20px;
+        margin-top: 17px;
+        position: absolute;
     }
 
     @media(max-width: 1024px) {
